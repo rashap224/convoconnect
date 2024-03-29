@@ -39,10 +39,9 @@ function Dashboard() {
 
   return (
     <div>
-      Dashboard
-      <LogoutLink>Logout</LogoutLink>
+      <MeetingType/>
     </div>
   );
 }
 
-export default Dashboard;
+export default Dashboard

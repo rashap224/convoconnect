@@ -12,5 +12,5 @@ export async function middleware(request) {
  
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: '/dashboard/:path*',
+  matcher: ['/dashboard/:path*','/create-business'],
 }
