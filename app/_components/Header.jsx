@@ -12,7 +12,7 @@ function Header() {
         '>
             
             <div><Image src='/logo.png' width={100} height={100} alt='logo'
-                className='w-[50px] md:w-[60px]'
+                className='w-[50px] md:w-[50px]'
             />
             <span style={{ color: 'darkblue' }}>ConvoConnect</span></div>
             <ul className='hidden md:flex gap-14 font-medium text-lg'>

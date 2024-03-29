@@ -1,14 +1,48 @@
-"use client"
-import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs'
-import React from 'react'
+"use client";
+import { LogoutLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+import React, { useEffect, useState } from "react";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { app } from "@/config/FirebaseConfig";
+import { useRouter } from "next/navigation";
 
 function Dashboard() {
-  return (
-    <div>Dashboard
+  const db = getFirestore(app);
+  const {user}=useKindeBrowserClient();
+  const [loading,setLoading]=useState(true);
 
-        <LogoutLink>Logout</LogoutLink>
+  useEffect(()=>{
+    user&&isBusinessRegistered();
+  },[user])
+
+  const router=useRouter();
+
+
+  const isBusinessRegistered = async () => {
+    const docRef = doc(db, "Business", user.email);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      console.log("Document data:", docSnap.data());
+      setLoading(false)
+    } else {
+      // docSnap.data() will be undefined in this case
+      console.log("No such document!");
+      setLoading(false)
+      router.replace('/create-business');
+    }
+  };
+
+  if(loading)
+  {
+    return <h2>Loading...</h2>
+  }
+
+  return (
+    <div>
+      Dashboard
+      <LogoutLink>Logout</LogoutLink>
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
