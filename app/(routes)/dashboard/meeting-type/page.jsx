@@ -2,7 +2,7 @@
 import { Input } from '@/components/ui/input'
 
 import React from 'react'
-//import MeetingEventList from './_components/MeetingEventList'
+import MeetingEventList from './_components/MeetingEventList'
 
 function MeetingType() {
   
@@ -13,7 +13,7 @@ function MeetingType() {
         <Input placeholder="Search" className="max-w-xs " />
         <hr></hr>
       </div>
-      {/* <MeetingEventList/> */}
+      <MeetingEventList/>
 
     </div>
   )
