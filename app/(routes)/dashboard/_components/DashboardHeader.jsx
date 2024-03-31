@@ -21,11 +21,11 @@ function DashboardHeader() {
 
                 <DropdownMenu>
                     <DropdownMenuTrigger className='flex items-center float-right'>
-                        <Image src={user?.picture} alt='logo'
+                        {user?.picture && <Image src={user?.picture} alt='logo'
                             width={40}
                             height={40}
                             className='rounded-full'
-                        />
+                        />}
                         <ChevronDown />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
