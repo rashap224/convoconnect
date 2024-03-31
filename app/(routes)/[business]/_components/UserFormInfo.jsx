@@ -19,7 +19,7 @@ function UserFormInfo({setUserName,setUserEmail,setUserNote}) {
             <Input onChange={(event)=>setUserNote(event.target.value)}/>
         </div>
         <div>
-            <h2 className='text-xs text-gray-400'>By Proceeding, you confirm that you read and agree Tubeguruji terms and condition</h2>
+            <h2 className='text-xs text-gray-400'>By Proceeding, you confirm that you read and agree terms and condition</h2>
            
         </div>
     </div>

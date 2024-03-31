@@ -150,9 +150,9 @@ function MeetingTimeDateSelection({eventInfo,businessInfo}) {
     my-10'
     style={{borderTopColor:eventInfo?.themeColor}}
     >
-       <Image src='/logo.svg' alt='logo'
-       width={150}
-       height={150}/>
+       <Image src='/logo.png' alt='logo'
+       width={70}
+       height={70}/>
        <div className='grid grid-cols-1 md:grid-cols-3 mt-5'>
             {/* Meeting Info  */}
             <div className='p-4 border-r'>
