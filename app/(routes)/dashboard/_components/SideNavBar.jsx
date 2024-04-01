@@ -26,12 +26,12 @@ function SideNavBar() {
             path:'/dashboard/availability',
             icon:Clock
         },
-        {
-            id:4,
-            name:'Settings',
-            path:'/dashboard/settings',
-            icon:Settings
-        },
+        // {
+        //     id:4,
+        //     name:'Settings',
+        //     path:'/dashboard/settings',
+        //     icon:Settings
+        // },
 
     ]
 
