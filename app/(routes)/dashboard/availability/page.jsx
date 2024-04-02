@@ -23,7 +23,7 @@ function Availability() {
             Tuesday:false
         },
         {
-            Wendsday:false
+            Wednesday:false
         },
         {
             Thursday:false

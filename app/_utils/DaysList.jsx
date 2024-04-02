@@ -6,6 +6,9 @@ export default[
         day:'Monday'
     },
     {
+        day:'Tuesday'
+    },
+    {
         day:'Wednesday'
     },
     {
