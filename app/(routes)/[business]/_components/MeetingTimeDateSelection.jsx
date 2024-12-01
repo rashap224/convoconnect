@@ -117,7 +117,7 @@ function MeetingTimeDateSelection({eventInfo,businessInfo}) {
 
       plunk.emails.send({
         to: userEmail,
-        subject: "Meeting Schedule Details",
+        subject: "Meeting Schedule Details are ",
         body: emailHtml,
       }).then(resp=>{
         console.log(resp);
