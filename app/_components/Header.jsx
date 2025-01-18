@@ -23,8 +23,7 @@ function Header() {
             </ul>
             <div className='flex gap-5'>
               <LoginLink> <Button variant="ghost">Login</Button></LoginLink> 
-               <RegisterLink><Button>Get Started here</Button></RegisterLink> 
-
+               <RegisterLink><Button>Lets Get Started here</Button></RegisterLink> 
             </div>
         </div>
     </div>
